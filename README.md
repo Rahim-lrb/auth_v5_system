@@ -1,33 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Auth System
+
+![Auth System](https://your-image-url.com)
+
+## Overview
+
+This project is an advanced authentication system built with Next.js and NextAuth. It includes features such as Google and GitHub registration, password recovery, login, two-factor authentication (2FA), email verification, and an admin panel. The backend uses Prisma with a Neon database, and the frontend is styled with Shadcn and managed with React Hook Form.
+
+### Live Demo
+
+Check out the live demo [here](https://auth-v5-system.vercel.app/).
+
+## Features
+
+- **Social Authentication**: Login and register using Google and GitHub.
+- **Password Recovery**: Secure password recovery system.
+- **Two-Factor Authentication**: Enhanced security with 2FA.
+- **Email Verification**: Verify user emails during registration.
+- **Admin Panel**: Manage users and system settings.
+
+## Technologies Used
+
+- **Next.js**: React framework for server-side rendering and static site generation.
+- **NextAuth**: Authentication for Next.js applications.
+- **Prisma**: ORM for database management.
+- **Neon**: PostgreSQL database service.
+- **Shadcn**: Component library for styling.
+- **React Hook Form**: Form management library.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js
+- npm or yarn
+- PostgreSQL database
+
+### Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-repo/auth-system.git
+    cd auth-system
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3. Set up environment variables:
+
+    Create a `.env` file in the root directory and add your environment variables:
+
+    ```plaintext
+    DATABASE_URL=your-database-url
+    NEXTAUTH_URL=your-nextauth-url
+    GOOGLE_CLIENT_ID=your-google-client-id
+    GOOGLE_CLIENT_SECRET=your-google-client-secret
+    GITHUB_CLIENT_ID=your-github-client-id
+    GITHUB_CLIENT_SECRET=your-github-client-secret
+    EMAIL_SERVER=your-email-server
+    EMAIL_FROM=your-email-from
+    ```
+
+4. Migrate the database:
+
+    ```bash
+    npx prisma migrate deploy
+    ```
+
+### Running the Application
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
