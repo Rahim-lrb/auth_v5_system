@@ -1,5 +1,6 @@
-# Auth System
+## Overview Authentication system project
 
+This project is an advanced authentication system built with Next.js and NextAuth. It includes features such as Google and GitHub registration, password recovery, login, two-factor authentication (2FA), email verification, and an admin panel. The backend uses Prisma with a Neon database, and the frontend is styled with Shadcn and managed with React Hook Form.
 
 [![Auth System](https://i.postimg.cc/rmBJkk3z/Screenshot-2024-07-16-193225.png)](https://postimg.cc/R6Tf7jMz)
 
@@ -8,9 +9,6 @@
 [![screencapture-auth-v5](https://i.postimg.cc/XJCfxPqW/screencapture-auth-v5-system-vercel-app-admin-2024-07-16-19-35-34.png)](https://postimg.cc/gXGL2N3t)
 
 
-## Overview
-
-This project is an advanced authentication system built with Next.js and NextAuth. It includes features such as Google and GitHub registration, password recovery, login, two-factor authentication (2FA), email verification, and an admin panel. The backend uses Prisma with a Neon database, and the frontend is styled with Shadcn and managed with React Hook Form.
 
 ### Live Demo
 
